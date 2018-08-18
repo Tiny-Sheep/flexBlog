@@ -1,15 +1,16 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import { NavContainer, NavItem } from '../themes'
 
 export default class NavBar extends Component {
 
   render() {
     return (
-      <div>
-        <div>Home</div>
-        <div>Projects</div>
-        <div>Resume</div>
-      </div>
+      <NavContainer>
+        <NavItem to='/' color='	#000000'  >Home</NavItem>
+        <NavItem to='/projects' color='	#000000' >Projects</NavItem>
+        <NavItem to='/resume' color='	#000000' >Resume</NavItem>
+      </NavContainer>
+
     )
   }
 }

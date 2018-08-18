@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Route, Switch, Redirect, withRouter } from 'react-router-dom';
-import { App, Portfolio } from './';
+import { Route, Switch } from 'react-router-dom';
+import { App, Projects, Resume } from '.';
 
 
 export default class Routes extends Component {
@@ -9,7 +9,8 @@ export default class Routes extends Component {
 
       <Switch>
         <Route exact path='/' component={App} />
-        <Route path='/portfolio' component={Portfolio} />
+        <Route path='/projects' component={Projects} />
+        <Route path='/resume' component={Resume} />
       </Switch>
     )
   }

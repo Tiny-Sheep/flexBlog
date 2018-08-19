@@ -11,6 +11,33 @@ margin-bottom:${marginBottom}
 
 `
 
+export const Project = styled(Div)`
+  display:grid;
+  grid-template-columns:50% 50%;
+  grid-template-rows:100%;
+  grid-gap:2px;
+  justify-content:center;
+  width:100%;
+  height:33%;
+  ${({ color }) => color && css`
+    background-color:${color}
+  `};
+
+`
+
+export const ProjectImage = styled.img`
+  grid-column:1;
+  max-width: 100%;
+  height: auto;
+`
+export const ProjectDesc = styled(Div)`
+  font-size:.5em;
+  grid-column:2;
+  max-width:100%;
+  height:auto;
+  `
+
+
 export const Container = styled(Div)`
   display:flex;
   flex-direction:column;
